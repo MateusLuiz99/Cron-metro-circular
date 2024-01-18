@@ -1,0 +1,118 @@
+/* Formatação da página HTML */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+    /* background-color: black; */
+    background: rgb(205,174,238);
+    background: radial-gradient(circle, rgba(205,174,238,1) 0%, rgba(136,38,246,1) 100%);
+}
+
+/* Container do cronômetro */
+.container{
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 6rem;
+    margin-top: 0;
+    /* text-align: center; */
+    border: 3px solid white;
+    border-radius: 100%;
+    height: 500px;
+    width: 500px;
+    background: rgb(205,174,238);
+}
+
+/* Numeração */
+#crono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 4rem;
+    color: white;
+}
+
+/* Botões de controle */
+.btn{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+/* Estilização padrão dos botões */
+#crono-btn{
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: .5s;
+}
+
+/* Ação padrão ao clique dos botões */
+#crono-btn:active{
+    transform: scale(1.1);
+}
+
+/* Estilização específica de um botão */
+.btn-iniciar{    
+    background-color: #1fbb34;
+}
+
+/* Estilização específica de um botão ao 
+passar o cursor no botão */
+.btn-iniciar:hover{
+    background-color: green;
+}
+
+/* Estilização específica de um botão */
+.btn-pausar{
+    background-color: #4950ff;
+}
+
+/* Estilização específica de um botão ao 
+passar o cursor no botão */
+.btn-pausar:hover{
+    background-color: blue;
+}
+
+/* Estilização específica de um botão */
+.btn-resetar{
+    background-color: #ff494d;
+}
+
+/* Estilização específica de um botão ao 
+passar o cursor no botão */
+.btn-resetar:hover{
+    background-color: red;
+}
+
+/* Estilização específica de um botão */
+.btn-continuar{
+    display: none;
+    background-color: purple;
+}
+
+/* Estilização específica de um botão ao 
+passar o cursor no botão */
+.btn-continuar:hover{
+    background-color: #5e015e;
+}
